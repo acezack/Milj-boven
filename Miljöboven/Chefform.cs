@@ -21,6 +21,8 @@ namespace Miljöboven
 
         private void Chefform_Load(object sender, EventArgs e)
         {
+            bool OlaÄrÄcklig = true;
+            bool ÄrOlaÄcklig;
             if (true)
             {
                 if (true)
@@ -39,7 +41,28 @@ namespace Miljöboven
                                         {
                                             if (true)
                                             {
-
+                                                if (true)
+                                                {
+                                                    if (true)
+                                                    {
+                                                        if (true)
+                                                        {
+                                                            if (true)
+                                                            {
+                                                                if (true)
+                                                                {
+                                                                    if (true)
+                                                                    {
+                                                                        if (OlaÄrÄcklig == true)
+                                                                        {
+                                                                            ÄrOlaÄcklig = true;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
