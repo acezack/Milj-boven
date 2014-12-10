@@ -21,52 +21,7 @@ namespace Miljöboven
 
         private void Chefform_Load(object sender, EventArgs e)
         {
-            if (true)
-            {
-                if (true)
-                {
-                    if (true)
-                    {
-                        if (true)
-                        {
-                            if (true)
-                            {
-                                if (true)
-                                {
-                                    if (true)
-                                    {
-                                        if (true)
-                                        {
-                                            if (true)
-                                            {
-                                                if (true)
-                                                {
-                                                    if (true)
-                                                    {
-                                                        if (true)
-                                                        {
-                                                            if (true)
-                                                            {
-                                                                if (true)
-                                                                {
-                                                                    if (true)
-                                                                    {
-                                                                        
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+
         }
 
         private void Chefform_FormClosing(object sender, FormClosingEventArgs e)
