@@ -1,6 +1,6 @@
 ﻿namespace Miljöboven
 {
-    partial class Handläggareform
+    partial class HandläggareForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Handläggareform));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HandläggareForm));
             this.clbÄrendetitlar = new System.Windows.Forms.CheckedListBox();
             this.rtbÄrenedeinformation = new System.Windows.Forms.RichTextBox();
             this.btnSkicka = new System.Windows.Forms.Button();

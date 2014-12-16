@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace Miljöboven
 {
-    public partial class Miljösamordnareform : Form
+    public partial class HandläggareForm : Form
     {
         Inloggningsform inloggningsform;
-        public Miljösamordnareform(Inloggningsform inloggningsform)
+        public HandläggareForm(Inloggningsform inloggningsform)
         {
             InitializeComponent();
             this.inloggningsform = inloggningsform;
         }
 
-        private void Miljösamordnareform_Load(object sender, EventArgs e)
+        private void Handläggareform_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Handläggareform_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            inloggningsform.Show();
         }
     }
 }

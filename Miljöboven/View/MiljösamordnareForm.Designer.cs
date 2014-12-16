@@ -1,6 +1,6 @@
 ﻿namespace Miljöboven
 {
-    partial class Chefform
+    partial class MiljösamordnareForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Chefform
+            // Miljösamordnareform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Chefform";
-            this.Text = "Chefform";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Chefform_FormClosing);
-            this.Load += new System.EventHandler(this.Chefform_Load);
+            this.Name = "Miljösamordnareform";
+            this.Text = "Miljösamordnareform";
+            this.Load += new System.EventHandler(this.Miljösamordnareform_Load);
             this.ResumeLayout(false);
 
         }

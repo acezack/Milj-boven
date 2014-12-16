@@ -44,43 +44,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chefform.cs">
+    <Compile Include="Controller\User.cs" />
+    <Compile Include="View\ChefForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chefform.Designer.cs">
-      <DependentUpon>Chefform.cs</DependentUpon>
+    <Compile Include="View\ChefForm.Designer.cs">
+      <DependentUpon>ChefForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Handläggareform.cs">
+    <Compile Include="View\HandläggareForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Handläggareform.Designer.cs">
-      <DependentUpon>Handläggareform.cs</DependentUpon>
+    <Compile Include="View\HandläggareForm.Designer.cs">
+      <DependentUpon>HandläggareForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inloggningsform.cs">
+    <Compile Include="View\InloggningsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inloggningsform.Designer.cs">
-      <DependentUpon>Inloggningsform.cs</DependentUpon>
+    <Compile Include="View\InloggningsForm.Designer.cs">
+      <DependentUpon>InloggningsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Miljösamordnareform.cs">
+    <Compile Include="View\MiljösamordnareForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Miljösamordnareform.Designer.cs">
-      <DependentUpon>Miljösamordnareform.cs</DependentUpon>
+    <Compile Include="View\MiljösamordnareForm.Designer.cs">
+      <DependentUpon>MiljösamordnareForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Chefform.resx">
-      <DependentUpon>Chefform.cs</DependentUpon>
+    <EmbeddedResource Include="View\ChefForm.resx">
+      <DependentUpon>ChefForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Handläggareform.resx">
-      <DependentUpon>Handläggareform.cs</DependentUpon>
+    <EmbeddedResource Include="View\HandläggareForm.resx">
+      <DependentUpon>HandläggareForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inloggningsform.resx">
-      <DependentUpon>Inloggningsform.cs</DependentUpon>
+    <EmbeddedResource Include="View\InloggningsForm.resx">
+      <DependentUpon>InloggningsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Miljösamordnareform.resx">
-      <DependentUpon>Miljösamordnareform.cs</DependentUpon>
+    <EmbeddedResource Include="View\MiljösamordnareForm.resx">
+      <DependentUpon>MiljösamordnareForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

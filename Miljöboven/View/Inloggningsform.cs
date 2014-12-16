@@ -17,28 +17,28 @@ namespace Miljöboven
             InitializeComponent();
         }
 
-        Chefform chefform;
-        Handläggareform handläggareform;
-        Miljösamordnareform miljösamordnareform;
+        ChefForm chefForm;
+        HandläggareForm handläggareForm;
+        MiljösamordnareForm miljösamordnareForm;
 
         private void btnLoggaIn_Click(object sender, EventArgs e)
         {
-            if (false) //Om man är en "chef"
+            if (true) //Om man är en "chef"
             {
-                chefform = new Chefform(this);
-                chefform.Show();
+                chefForm = new ChefForm(this);
+                chefForm.Show();
                 this.Hide();
             }
             else if (true) //Om man är en "handläggare"
             {
-                handläggareform = new Handläggareform(this);
-                handläggareform.Show();
+                handläggareForm = new HandläggareForm(this);
+                handläggareForm.Show();
                 this.Hide();
             }
             else if (true) //Om man är en "miljösamordnare"
             {
-                miljösamordnareform = new Miljösamordnareform(this);
-                miljösamordnareform.Show();
+                miljösamordnareForm = new MiljösamordnareForm(this);
+                miljösamordnareForm.Show();
                 this.Hide();
             }
         }
