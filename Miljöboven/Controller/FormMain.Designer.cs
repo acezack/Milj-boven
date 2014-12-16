@@ -1,6 +1,6 @@
-﻿namespace Miljöboven.View
+﻿namespace Miljöboven.Controller
 {
-    partial class MiljösamordnareForm
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Miljösamordnareform
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Miljösamordnareform";
-            this.Text = "Miljösamordnareform";
-            this.Load += new System.EventHandler(this.MiljösamordnareForm_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "FormMain";
         }
 
         #endregion

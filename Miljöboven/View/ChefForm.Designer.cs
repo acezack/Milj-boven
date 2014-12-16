@@ -1,4 +1,4 @@
-﻿namespace Miljöboven
+﻿namespace Miljöboven.View
 {
     partial class ChefForm
     {
@@ -37,8 +37,8 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Name = "Chefform";
             this.Text = "Chefform";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Chefform_FormClosing);
-            this.Load += new System.EventHandler(this.Chefform_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChefForm_FormClosing);
+            this.Load += new System.EventHandler(this.ChefForm_Load);
             this.ResumeLayout(false);
 
         }

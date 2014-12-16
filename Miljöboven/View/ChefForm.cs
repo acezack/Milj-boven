@@ -8,23 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Miljöboven
+namespace Miljöboven.View
 {
     public partial class ChefForm : Form
     {
-        Inloggningsform inloggningsform;
-        public ChefForm(Inloggningsform inloggningsform)
+        InloggningsForm inloggningsForm;
+        public ChefForm(InloggningsForm inloggningsForm)
         {
             InitializeComponent();
-            this.inloggningsform = inloggningsform;
+            this.inloggningsForm = inloggningsForm;
         }
 
-        private void Chefform_Load(object sender, EventArgs e)
+        private void ChefForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Chefform_FormClosing(object sender, FormClosingEventArgs e)
+        private void ChefForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             
         }

@@ -7,20 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Miljöboven.View;
 
 namespace Miljöboven.View
 {
-    public partial class MiljösamordnareForm : Form
+    public partial class AdminForm : Form
     {
-        InloggningsForm inloggningsForm;
-        public MiljösamordnareForm(InloggningsForm inloggningsForm)
+        public AdminForm()
         {
             InitializeComponent();
-            this.inloggningsForm = inloggningsForm;
         }
 
-        private void MiljösamordnareForm_Load(object sender, EventArgs e)
+        private void AdminForm_Load(object sender, EventArgs e)
         {
 
         }

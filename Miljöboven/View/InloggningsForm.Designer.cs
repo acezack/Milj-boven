@@ -1,6 +1,6 @@
-﻿namespace Miljöboven
+﻿namespace Miljöboven.View
 {
-    partial class Inloggningsform
+    partial class InloggningsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inloggningsform));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InloggningsForm));
             this.btnLoggaIn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -111,7 +111,7 @@
             this.MinimumSize = new System.Drawing.Size(554, 430);
             this.Name = "Inloggningsform";
             this.Text = "Miljöboven";
-            this.Load += new System.EventHandler(this.Inloggningsform_Load);
+            this.Load += new System.EventHandler(this.InloggningsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

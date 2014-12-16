@@ -7,43 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Miljöboven.Controller;
+using Miljöboven.View;
 
-namespace Miljöboven
+namespace Miljöboven.View
 {
-    public partial class Inloggningsform : Form
+    public partial class InloggningsForm : Form
     {
-        public Inloggningsform()
+        Controller.FormMain formMain;
+
+        public InloggningsForm(Controller.FormMain formMain)
         {
+            this.formMain = formMain;
             InitializeComponent();
         }
 
-        ChefForm chefForm;
-        HandläggareForm handläggareForm;
-        MiljösamordnareForm miljösamordnareForm;
+        View.ChefForm chefForm;
+        View.HandläggareForm handläggareForm;
+        View.MiljösamordnareForm miljösamordnareForm;
+        View.AdminForm adminForm;
 
         private void btnLoggaIn_Click(object sender, EventArgs e)
         {
-            if (true) //Om man är en "chef"
-            {
-                chefForm = new ChefForm(this);
-                chefForm.Show();
-                this.Hide();
-            }
-            else if (true) //Om man är en "handläggare"
-            {
-                handläggareForm = new HandläggareForm(this);
-                handläggareForm.Show();
-                this.Hide();
-            }
-            else if (true) //Om man är en "miljösamordnare"
-            {
-                miljösamordnareForm = new MiljösamordnareForm(this);
-                miljösamordnareForm.Show();
-                this.Hide();
-            }
+            for (int index = 0; index < formMain.userList.Count; index++)
+			{
+                if (tbxAnvändarnamn.Text == formMain.userList[index].UserName && tbxLösenord.Text == formMain.userList[index].Password)
+                {
+                    chefForm.Show();
+                    this.Close();
+                }
+			}
         }
 
-        private void Inloggningsform_Load(object sender, EventArgs e)
+        private void InloggningsForm_Load(object sender, EventArgs e)
         {
 
         }

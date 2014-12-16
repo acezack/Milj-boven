@@ -10,7 +10,7 @@ namespace Miljöboven.Controller
     {
         public String UserName { get; set; }
         public String Password { get; set; }
-        public Int32 Type { get; set; }
+        public Int32 Type { get; set; } //0=admin, 1=chef, 2=handläggare, 3=miljösamordnare
         public Int32 ID { get; set; }
 
         public User(string userName, string password, int type, int id)

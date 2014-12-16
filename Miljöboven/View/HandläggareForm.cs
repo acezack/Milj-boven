@@ -8,25 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Miljöboven
+namespace Miljöboven.View
 {
     public partial class HandläggareForm : Form
     {
-        Inloggningsform inloggningsform;
-        public HandläggareForm(Inloggningsform inloggningsform)
+        View.InloggningsForm inloggningsForm;
+        public HandläggareForm(View.InloggningsForm inloggningsForm)
         {
             InitializeComponent();
-            this.inloggningsform = inloggningsform;
+            this.inloggningsForm = inloggningsForm;
         }
 
-        private void Handläggareform_Load(object sender, EventArgs e)
+        private void HandläggareForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Handläggareform_FormClosing(object sender, FormClosingEventArgs e)
+        private void HandläggareForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            inloggningsform.Show();
+            inloggningsForm.Show();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Miljöboven
+﻿namespace Miljöboven.View
 {
     partial class HandläggareForm
     {
@@ -99,8 +99,8 @@
             this.MinimizeBox = false;
             this.Name = "Handläggareform";
             this.Text = "-";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Handläggareform_FormClosing);
-            this.Load += new System.EventHandler(this.Handläggareform_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HandläggareForm_FormClosing);
+            this.Load += new System.EventHandler(this.HandläggareForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
