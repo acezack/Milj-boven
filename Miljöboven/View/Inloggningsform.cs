@@ -18,7 +18,7 @@ namespace Miljöboven.View
         public InloggningsForm()
         {
             InitializeComponent();
-            userList = new UserList<User>();
+            userList = new UserList();
         }
 
         View.ChefForm chefForm;
@@ -29,9 +29,9 @@ namespace Miljöboven.View
 
         private void btnLoggaIn_Click(object sender, EventArgs e)
         {
-            for (int index = 0; index < UserList.GetCount; index++)
+            for (int index = 0; index < userList.GetCount; index++)
 			{
-                if (tbxAnvändarnamn.Text == UserList[index].UserName && tbxLösenord.Text == formMain.userList[index].Password)
+                if (tbxAnvändarnamn.Text == userList.GetUser(index).ToString() && tbxLösenord.Text == userList[index].Password)
                 {
                     chefForm.Show();
                     this.Close();

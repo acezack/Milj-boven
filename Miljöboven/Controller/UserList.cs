@@ -19,5 +19,10 @@ namespace Miljöboven.Controller
         {
             return userList.Count();
         }
+        public string GetUserName(int index)
+        {
+            return userList[index].UserName;
+        }
+        public string Password 
     }
 }

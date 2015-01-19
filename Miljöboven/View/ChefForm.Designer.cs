@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Chefform
+            // ChefForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Chefform";
+            this.ClientSize = new System.Drawing.Size(601, 455);
+            this.Name = "ChefForm";
             this.Text = "Chefform";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChefForm_FormClosing);
             this.Load += new System.EventHandler(this.ChefForm_Load);
