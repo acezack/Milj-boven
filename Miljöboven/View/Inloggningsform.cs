@@ -14,11 +14,9 @@ namespace Miljöboven.View
 {
     public partial class InloggningsForm : Form
     {
-        Controller.FormMain formMain;
 
-        public InloggningsForm(Controller.FormMain formMain)
+        public InloggningsForm()
         {
-            this.formMain = formMain;
             InitializeComponent();
         }
 

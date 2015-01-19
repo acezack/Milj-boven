@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Miljöboven.Controller;
+using Miljöboven.View;
 
 namespace Miljöboven
 {
@@ -17,7 +18,7 @@ namespace Miljöboven
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.Run(new InloggningsForm());
         }
     }
 }
