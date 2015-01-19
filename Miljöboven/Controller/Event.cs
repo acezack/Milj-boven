@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Miljöboven.Controller
 {
-    class Event
+    public class Event
     {
+        public String titel { get; set; }
+
     }
 }

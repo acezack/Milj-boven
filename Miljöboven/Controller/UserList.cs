@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Miljöboven.Controller
 {
     public class UserList
@@ -13,6 +14,10 @@ namespace Miljöboven.Controller
         public void Add(User user)
         {
             userList.Add(user);
+        }
+        public int GetCount()
+        {
+            return userList.Count();
         }
     }
 }

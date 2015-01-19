@@ -52,10 +52,10 @@
             // 
             this.rtbÄrenedeinformation.Location = new System.Drawing.Point(269, 12);
             this.rtbÄrenedeinformation.Name = "rtbÄrenedeinformation";
-            this.rtbÄrenedeinformation.Size = new System.Drawing.Size(458, 170);
+            this.rtbÄrenedeinformation.Size = new System.Drawing.Size(193, 170);
             this.rtbÄrenedeinformation.TabIndex = 1;
-            this.rtbÄrenedeinformation.Text = "Här står det en massa info om ärendet, tex vart det är och vad som är fel\n\nden ti" +
-    "tel du markerat i checklistboxen bestämmer vilket ärende information visas för";
+            this.rtbÄrenedeinformation.Text = "1/1/2015 Blev tilldelat ärendet. Har ringt markägaren \noch pratat med denna.\n\n2/1" +
+    "/2015 Åker till brottsplatsen och undersöker.";
             // 
             // btnSkicka
             // 
@@ -84,7 +84,7 @@
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
-            // Handläggareform
+            // HandläggareForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,7 +97,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Handläggareform";
+            this.Name = "HandläggareForm";
             this.Text = "-";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HandläggareForm_FormClosing);
             this.Load += new System.EventHandler(this.HandläggareForm_Load);

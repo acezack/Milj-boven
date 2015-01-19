@@ -18,18 +18,20 @@ namespace Miljöboven.View
         public InloggningsForm()
         {
             InitializeComponent();
+            userList = new UserList<User>();
         }
 
         View.ChefForm chefForm;
         View.HandläggareForm handläggareForm;
         View.MiljösamordnareForm miljösamordnareForm;
         View.AdminForm adminForm;
+        UserList userList;
 
         private void btnLoggaIn_Click(object sender, EventArgs e)
         {
-            for (int index = 0; index < formMain.userList.Count; index++)
+            for (int index = 0; index < UserList.GetCount; index++)
 			{
-                if (tbxAnvändarnamn.Text == formMain.userList[index].UserName && tbxLösenord.Text == formMain.userList[index].Password)
+                if (tbxAnvändarnamn.Text == UserList[index].UserName && tbxLösenord.Text == formMain.userList[index].Password)
                 {
                     chefForm.Show();
                     this.Close();
