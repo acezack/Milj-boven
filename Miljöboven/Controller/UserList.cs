@@ -23,6 +23,17 @@ namespace Miljöboven.Controller
         {
             return userList[index].UserName;
         }
-        public string Password 
+        public string Password(int index)
+        {
+            return userList[index].Password;
+        }
+        public int Type(int index)
+        {
+            return userList[index].Type;
+        }
+        public int ID(int index)
+        {
+            return userList[index].ID;
+        }
     }
 }

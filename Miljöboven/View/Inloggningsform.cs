@@ -29,9 +29,9 @@ namespace Miljöboven.View
 
         private void btnLoggaIn_Click(object sender, EventArgs e)
         {
-            for (int index = 0; index < userList.GetCount; index++)
+            for (int index = 0; index < userList.GetCount(); index++)
 			{
-                if (tbxAnvändarnamn.Text == userList.GetUser(index).ToString() && tbxLösenord.Text == userList[index].Password)
+                if (tbxAnvändarnamn.Text == userList.GetUserName(index) && tbxLösenord.Text == userList.Password(index))
                 {
                     chefForm.Show();
                     this.Close();
