@@ -33,9 +33,9 @@
             this.rtbÄrenedeinformation = new System.Windows.Forms.RichTextBox();
             this.btnSkicka = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbKommentar = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbEvent = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // clbÄrendetitlar
@@ -49,6 +49,7 @@
             this.clbÄrendetitlar.Name = "clbÄrendetitlar";
             this.clbÄrendetitlar.Size = new System.Drawing.Size(171, 274);
             this.clbÄrendetitlar.TabIndex = 0;
+            this.clbÄrendetitlar.SelectedIndexChanged += new System.EventHandler(this.clbÄrendetitlar_SelectedIndexChanged);
             // 
             // rtbÄrenedeinformation
             // 
@@ -77,13 +78,13 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Kommentarer:";
             // 
-            // richTextBox1
+            // rtbKommentar
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(369, 214);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(244, 72);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            this.rtbKommentar.Location = new System.Drawing.Point(369, 214);
+            this.rtbKommentar.Name = "rtbKommentar";
+            this.rtbKommentar.Size = new System.Drawing.Size(244, 72);
+            this.rtbKommentar.TabIndex = 4;
+            this.rtbKommentar.Text = "";
             // 
             // button1
             // 
@@ -94,24 +95,24 @@
             this.button1.Text = "Slutför";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbEvent
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lbEvent.FormattingEnabled = true;
+            this.lbEvent.Items.AddRange(new object[] {
             "21 / 1 - 2015   Besökte platsen och fixade så att man kan se ifall det är bra"});
-            this.listBox1.Location = new System.Drawing.Point(189, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(535, 160);
-            this.listBox1.TabIndex = 6;
+            this.lbEvent.Location = new System.Drawing.Point(189, 12);
+            this.lbEvent.Name = "lbEvent";
+            this.lbEvent.Size = new System.Drawing.Size(535, 160);
+            this.lbEvent.TabIndex = 6;
             // 
             // HandläggareForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 303);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbEvent);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbKommentar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSkicka);
             this.Controls.Add(this.rtbÄrenedeinformation);
@@ -129,12 +130,12 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox clbÄrendetitlar;
-        private System.Windows.Forms.RichTextBox rtbÄrenedeinformation;
         private System.Windows.Forms.Button btnSkicka;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.CheckedListBox clbÄrendetitlar;
+        public System.Windows.Forms.RichTextBox rtbÄrenedeinformation;
+        public System.Windows.Forms.RichTextBox rtbKommentar;
+        public System.Windows.Forms.ListBox lbEvent;
     }
 }

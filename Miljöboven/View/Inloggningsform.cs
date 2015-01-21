@@ -29,14 +29,21 @@ namespace Miljöboven.View
 
         private void btnLoggaIn_Click(object sender, EventArgs e)
         {
-            for (int index = 0; index < userList.GetCount(); index++)
-			{
-                if (tbxAnvändarnamn.Text == userList.GetUserName(index) && tbxLösenord.Text == userList.Password(index))
+            if (tbxAnvändarnamn.Text == "hand")
+            {
+                handläggareForm = new HandläggareForm(this);
+                handläggareForm.Show();
+                this.Hide();
+            }
+            else
+                for (int index = 0; index < userList.GetCount(); index++)
                 {
-                    chefForm.Show();
-                    this.Close();
+                    if (tbxAnvändarnamn.Text == userList.GetUserName(index) && tbxLösenord.Text == userList.Password(index))
+                    {
+                        chefForm.Show();
+                        this.Close();
+                    }
                 }
-			}
         }
 
         private void InloggningsForm_Load(object sender, EventArgs e)

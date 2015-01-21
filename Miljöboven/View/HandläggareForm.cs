@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Miljöboven.Controller;
 
 namespace Miljöboven.View
 {
     public partial class HandläggareForm : Form
     {
         View.InloggningsForm inloggningsForm;
+        CrimeList crimeList;
+        
         public HandläggareForm(View.InloggningsForm inloggningsForm)
         {
             InitializeComponent();
             this.inloggningsForm = inloggningsForm;
+            this.crimeList = new CrimeList(this);
         }
 
         private void HandläggareForm_Load(object sender, EventArgs e)
@@ -27,6 +31,11 @@ namespace Miljöboven.View
         private void HandläggareForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             inloggningsForm.Show();
+        }
+
+        private void clbÄrendetitlar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            crimeList.UpdateSelectedCrime(clbÄrendetitlar.SelectedIndex);
         }
     }
 }
