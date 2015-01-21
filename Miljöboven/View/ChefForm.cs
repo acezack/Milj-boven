@@ -12,11 +12,9 @@ namespace Miljöboven.View
 {
     public partial class ChefForm : Form
     {
-        InloggningsForm inloggningsForm;
-        public ChefForm(InloggningsForm inloggningsForm)
+        public ChefForm()
         {
             InitializeComponent();
-            this.inloggningsForm = inloggningsForm;
         }
 
         private void ChefForm_Load(object sender, EventArgs e)

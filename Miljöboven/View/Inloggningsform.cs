@@ -36,6 +36,7 @@ namespace Miljöboven.View
                 {
                     if (userList.GetType(index) == 0)//admin
                     {
+                        this.Hide();
                         AdminForm adminForm = new AdminForm();
                         adminForm.Show();
                     }
