@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InloggningsForm));
-            this.btnLoggaIn = new System.Windows.Forms.Button();
+            this.btnLogIn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbxAnvändarnamn = new System.Windows.Forms.TextBox();
-            this.tbxLösenord = new System.Windows.Forms.TextBox();
+            this.tbxUsername = new System.Windows.Forms.TextBox();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnLoggaIn
+            // btnLogIn
             // 
-            this.btnLoggaIn.Location = new System.Drawing.Point(398, 347);
-            this.btnLoggaIn.Name = "btnLoggaIn";
-            this.btnLoggaIn.Size = new System.Drawing.Size(128, 33);
-            this.btnLoggaIn.TabIndex = 3;
-            this.btnLoggaIn.Text = "Logga in";
-            this.btnLoggaIn.UseVisualStyleBackColor = true;
-            this.btnLoggaIn.Click += new System.EventHandler(this.btnLoggaIn_Click);
+            this.btnLogIn.Location = new System.Drawing.Point(398, 347);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(128, 33);
+            this.btnLogIn.TabIndex = 3;
+            this.btnLogIn.Text = "Logga in";
+            this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLoggaIn_Click);
             // 
             // label1
             // 
@@ -66,21 +66,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lösenord:";
             // 
-            // tbxAnvändarnamn
+            // tbxUsername
             // 
-            this.tbxAnvändarnamn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxAnvändarnamn.Location = new System.Drawing.Point(398, 295);
-            this.tbxAnvändarnamn.Name = "tbxAnvändarnamn";
-            this.tbxAnvändarnamn.Size = new System.Drawing.Size(128, 20);
-            this.tbxAnvändarnamn.TabIndex = 1;
+            this.tbxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxUsername.Location = new System.Drawing.Point(398, 295);
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.Size = new System.Drawing.Size(128, 20);
+            this.tbxUsername.TabIndex = 1;
             // 
-            // tbxLösenord
+            // tbxPassword
             // 
-            this.tbxLösenord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxLösenord.Location = new System.Drawing.Point(398, 321);
-            this.tbxLösenord.Name = "tbxLösenord";
-            this.tbxLösenord.Size = new System.Drawing.Size(128, 20);
-            this.tbxLösenord.TabIndex = 2;
+            this.tbxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxPassword.Location = new System.Drawing.Point(398, 321);
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.Size = new System.Drawing.Size(128, 20);
+            this.tbxPassword.TabIndex = 2;
+            this.tbxPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbxPassword_KeyUp);
             // 
             // pictureBox1
             // 
@@ -92,26 +93,25 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // Inloggningsform
+            // InloggningsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(538, 392);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.tbxLösenord);
-            this.Controls.Add(this.tbxAnvändarnamn);
+            this.Controls.Add(this.tbxPassword);
+            this.Controls.Add(this.tbxUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnLoggaIn);
+            this.Controls.Add(this.btnLogIn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(554, 430);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(554, 430);
-            this.Name = "Inloggningsform";
+            this.Name = "InloggningsForm";
             this.Text = "Miljöboven";
-            this.Load += new System.EventHandler(this.InloggningsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,12 +120,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnLoggaIn;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbxAnvändarnamn;
-        private System.Windows.Forms.TextBox tbxLösenord;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button btnLogIn;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox tbxUsername;
+        public System.Windows.Forms.TextBox tbxPassword;
+        public System.Windows.Forms.PictureBox pictureBox1;
+
     }
 }
 
